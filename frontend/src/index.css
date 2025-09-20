@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+.img_p{
+    background-image: url('./assets/images/sus.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
