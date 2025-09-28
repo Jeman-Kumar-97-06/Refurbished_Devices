@@ -17,7 +17,7 @@ const products = [
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-green-50 text-gray-800">
+    <div className="min-h-screen text-gray-800">
       {/* Hero Section */}
       <section className="img_p relative text-white">
         <div className="max-w-6xl mr-5 py-20 text-right">
@@ -44,17 +44,17 @@ export default function LandingPage() {
       {/* Features Section */}
       <section className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-10 text-center">
         <div className="bg-white rounded-2xl p-6 shadow-md">
-          <ShieldCheck className="w-10 h-10 mx-auto text-[#5d7b4f] mb-4" />
+          <ShieldCheck className="w-10 h-10 mx-auto text-[teal] mb-4" />
           <h3 className="text-xl font-semibold mb-2">Certified Quality</h3>
           <p className="text-gray-600">Every phone is rigorously tested & certified.</p>
         </div>
         <div className="bg-white rounded-2xl p-6 shadow-md">
-          <RefreshCcw className="w-10 h-10 mx-auto text-[#5d7b4f] mb-4" />
+          <RefreshCcw className="w-10 h-10 mx-auto text-[teal] mb-4" />
           <h3 className="text-xl font-semibold mb-2">Eco-Friendly</h3>
           <p className="text-gray-600">Reduce e-waste while saving big on your phone.</p>
         </div>
         <div className="bg-white rounded-2xl p-6 shadow-md">
-          <Truck className="w-10 h-10 mx-auto text-[#5d7b4f] mb-4" />
+          <Truck className="w-10 h-10 mx-auto text-[teal] mb-4" />
           <h3 className="text-xl font-semibold mb-2">Fast Delivery</h3>
           <p className="text-gray-600">Quick & secure shipping to your doorstep.</p>
         </div>
@@ -77,7 +77,7 @@ export default function LandingPage() {
       >
         {products && products.map((product) => (
           <SwiperSlide key={product._id}>
-            <div className="p-4 bg-white rounded-lg shadow-lg text-center mb-3">
+            <div className="p-4 bg-white rounded-lg shadow-lg text-center mb-3 w-[31vw]">
               <img src={product.image} alt={product.name} className="w-full h-40 object-contain rounded" />
               <h2 className="mt-2 text-lg font-bold">{product.name}</h2>
             </div>
@@ -87,7 +87,7 @@ export default function LandingPage() {
 
       {/* Testimonials */}
       <section className="max-w-6xl mx-auto px-6 py-16 text-center">
-        <h2 className="text-3xl font-bold mb-12 text-[#5d7b4f]">Happy Customers</h2>
+        <h2 className="text-3xl font-bold mb-12 text-[teal]">Happy Customers</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {["Amazing quality!", "Eco + affordable!", "Feels brand new!"].map(
             (review, i) => (
@@ -102,7 +102,7 @@ export default function LandingPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#5d7b4f] text-white py-16 text-center">
+      <section className="bg-[teal] text-white py-16 text-center">
         <h2 className="text-3xl font-bold mb-6">Join the Green Tech Movement</h2>
         <p className="mb-8 opacity-90">
           Shop refurbished & help reduce e-waste while saving money.
