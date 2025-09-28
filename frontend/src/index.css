@@ -1,11 +1,15 @@
 @import "tailwindcss";
 
 .img_p{
-    background-image: url('./assets/images/sus.png');
-    background-size: cover;
+    background-image: url('./assets/images/RCH-Refurbished-Phones-big.png');
+    background-color: turquoise;
+    background-size: contain;
     background-repeat: no-repeat;
-    height:auto;
+    height:700px;
     display: flex;
     flex-direction: row;
     justify-content: right;
+}
+.bigtextonlandingpage{
+    color: black;
 }

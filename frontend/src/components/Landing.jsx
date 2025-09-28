@@ -25,11 +25,11 @@ export default function LandingPage() {
             initial={{ y: 40, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6 }}
-            className="text-4xl md:text-6xl font-bold mb-6"
+            className="bigtextonlandingpage text-4xl md:text-6xl font-bold mb-6"
           >
             Sustainable Tech, <br /> Smarter Prices
           </motion.h1>
-          <p className="text-lg md:text-xl mb-8 opacity-90">
+          <p className="text-lg bigtextonlandingpage md:text-xl mb-8 opacity-90">
             Save money & the planet 🌍 — shop certified refurbished phones.
           </p>
           <motion.button
@@ -40,7 +40,7 @@ export default function LandingPage() {
           </motion.button>
         </div>
       </section>
-
+      <hr/>
       {/* Features Section */}
       <section className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-10 text-center">
         <div className="bg-white rounded-2xl p-6 shadow-md">
