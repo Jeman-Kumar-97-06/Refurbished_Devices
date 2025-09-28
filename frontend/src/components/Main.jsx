@@ -49,14 +49,14 @@ export default function HomePage() {
   ];
 
   return (
-    <div className="min-h-screen bg-green-50">
+    <div className="min-h-screen bg-white">
       {/* Navbar */}
       <nav className="sticky top-0 z-50 bg-white shadow-md">
         <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <Phone className="w-7 h-7 text-green-600" />
-            <h1 className="text-xl font-bold text-green-700">GreenPhone Hub</h1>
+            <Phone className="w-7 h-7 text-[teal]" />
+            <h1 className="text-xl font-bold text-[teal]">GreenPhone Hub</h1>
           </div>
 
           {/* Action Buttons */}
@@ -82,7 +82,7 @@ export default function HomePage() {
       </nav>
 
       {/* Header */}
-      <section className="bg-gradient-to-r from-green-600 to-emerald-600 text-white py-16 text-center">
+      <section className="bg-gradient-to-r from-[teal] to-emerald-600 text-white py-16 text-center">
         <h1 className="text-4xl md:text-5xl font-bold">
           Browse All Refurbished Phones
         </h1>
@@ -110,10 +110,10 @@ export default function HomePage() {
                   {product.name}
                 </h2>
                 <p className="text-gray-500 text-sm mb-2">{product.battery}</p>
-                <p className="text-green-700 font-bold text-xl mb-4">
+                <p className="text-[teal] font-bold text-xl mb-4">
                   ₹{product.price}
                 </p>
-                <button className="bg-green-600 text-white px-4 py-2 rounded-xl shadow hover:bg-green-700 transition">
+                <button className="bg-[teal] text-[white] px-4 py-2 rounded-xl shadow hover:bg-green-700 cursor-pointer transition">
                   View Details
                 </button>
               </motion.div>

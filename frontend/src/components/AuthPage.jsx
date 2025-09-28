@@ -19,14 +19,14 @@ export default function AuthPage() {
   };
 
   return (
-    <div className="flex items-center justify-center h-screen bg-green-50">
+    <div className="flex items-center justify-center h-screen bg-white">
       <div className="bg-white p-8 rounded-2xl shadow-lg w-96">
         {/* Tabs */}
         <div className="flex mb-6">
           <button
             onClick={() => setIsLogin(true)}
             className={`flex-1 py-2 font-semibold rounded-lg ${
-              isLogin ? "bg-green-600 text-white" : "bg-gray-100 text-gray-700"
+              isLogin ? "bg-[teal] text-white" : "bg-gray-100 text-gray-700"
             }`}
           >
             Login
@@ -34,7 +34,7 @@ export default function AuthPage() {
           <button
             onClick={() => setIsLogin(false)}
             className={`flex-1 py-2 font-semibold rounded-lg ml-2 ${
-              !isLogin ? "bg-green-600 text-white" : "bg-gray-100 text-gray-700"
+              !isLogin ? "bg-[teal] text-white" : "bg-gray-100 text-gray-700"
             }`}
           >
             Sign Up
@@ -60,7 +60,7 @@ export default function AuthPage() {
             />
             <button
               type="submit"
-              className="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700"
+              className="w-full bg-[teal] text-white py-2 rounded-lg hover:bg-green-700"
             >
               Login
             </button>
@@ -91,7 +91,7 @@ export default function AuthPage() {
             />
             <button
               type="submit"
-              className="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700"
+              className="w-full bg-[teal] text-white py-2 rounded-lg hover:bg-green-700"
             >
               Sign Up
             </button>

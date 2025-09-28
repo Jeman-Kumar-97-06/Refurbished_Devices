@@ -5,16 +5,21 @@ import GreenGadgetsAd from './components/Landing'
 import HomePage from './components/Main'
 import ProductDetail from './components/ProductDets'
 import CartPage from './components/CartPage'
-import AuthPage from './components/AuthPage'
+import AuthPage from './components/AuthPage';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 function App() {
   
   return (
     <>
-      <GreenGadgetsAd/>
-      <HomePage/>
-      <ProductDetail/>
-      <CartPage/>
-      <AuthPage/>
+    <BrowserRouter>
+    <Routes>
+      <Route exact path='/' element={<GreenGadgetsAd/>}/>
+      <Route exact path='/home' element={<HomePage/>}/>
+      <Route exact path='/detail' element={<ProductDetail/>}/>
+      <Route exact path='/cart' element={<CartPage/>}/>
+      <Route exact path='/auth' element={<AuthPage/>}/>
+    </Routes>
+    </BrowserRouter>
     </>
   )
 }
