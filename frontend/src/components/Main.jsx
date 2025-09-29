@@ -56,7 +56,7 @@ export default function HomePage() {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <Phone className="w-7 h-7 text-[teal]" />
-            <h1 className="text-xl font-bold text-[teal]">GreenPhone Hub</h1>
+            <h1 className="text-xl font-bold text-[teal]">Re-Store</h1>
           </div>
 
           {/* Action Buttons */}

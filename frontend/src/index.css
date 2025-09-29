@@ -1,14 +1,13 @@
 @import "tailwindcss";
 
 .img_p{
-    background-image: url('./assets/images/RCH-Refurbished-Phones-big.png');
     background-color: turquoise;
     background-size: contain;
     background-repeat: no-repeat;
-    height:700px;
+    height:500px;
     display: flex;
     flex-direction: row;
-    justify-content: right;
+    justify-content: center;
 }
 .bigtextonlandingpage{
     color: black;

@@ -5,6 +5,7 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { Link } from "react-router-dom";
 
 const products = [
   { id: 1, name: "iPhone 12", price: "$499", image: "https://images-cdn.ubuy.co.in/66292c9d2df83775d679582f-pre-owned-apple-iphone-12-carrier.jpg" },
@@ -27,9 +28,10 @@ export default function LandingPage() {
             transition={{ duration: 0.6 }}
             className="bigtextonlandingpage text-4xl md:text-6xl font-bold mb-6"
           >
-            Sustainable Tech, <br /> Smarter Prices
+            Re-Store
           </motion.h1>
           <p className="text-lg bigtextonlandingpage md:text-xl mb-8 opacity-90">
+            Sustainable Tech, Smarter Prices
             Save money & the planet 🌍 — shop certified refurbished phones.
           </p>
           <motion.button
@@ -107,9 +109,9 @@ export default function LandingPage() {
         <p className="mb-8 opacity-90">
           Shop refurbished & help reduce e-waste while saving money.
         </p>
-        <button className="bg-white text-[#5d7b4f] font-semibold px-6 py-3 rounded-2xl shadow-lg">
+        <Link to='/home' className="bg-white text-[#5d7b4f] font-semibold px-6 py-3 rounded-2xl shadow-lg">
           Browse Phones
-        </button>
+        </Link>
       </section>
 
       {/* Footer */}
